@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F4F4F4;
+}
+
+* {
+    margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.parent-container {
+    min-width: 1650px;
+}
+
+.container {
+    width: 1650px;
+    margin: auto;
+}
+
+/*---------- Variables ---------- */
+:root {
+    --purple: #814EFA;
+    --light-purple: rgba(129, 78, 250, 0.10);
+    --gray: #F4F4F4;
+}
+
+/*---------- Content Control ---------- */
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+/*---------- Colors ----------*/
+.purple {
+    color: #814EFA;
+}
+
+/*---------- Buttons ----------*/
+.btn-action {
+    font-family: Anonymous Pro;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.btn-primary {
+    width: 400px;
+    height: 35px;
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: 17.5px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+}
+
+.btn-secondary {
+    width: 400px;
+    height: 35px;
+    background-color: var(--light-purple);
+    border: 1px solid var(--purple);
+    border-radius: 17.5px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--purple);
+}
+
+.btn-secondary:hover {
+    cursor: pointer;
+}
+
+/*---------- Labels & Inputs ----------*/
+.label-form {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-form {
+    border: 1px solid #c2c2c2;
+    border-radius: 12px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px 15px;
+    outline: none;
+}
+
+.input-form:active, .input-form:focus {
+    border: 1px solid var(--purple);
+}
+
+/*---------- Lists ----------*/
+.action-list {
+    text-align: end;
+}
+
+.action-list li {
+    margin: 15px 0;
+}

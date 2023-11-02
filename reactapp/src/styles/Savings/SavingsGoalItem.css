@@ -1,0 +1,31 @@
+.savings-goal__container {
+    width: 440px;
+    padding: 10px 30px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+}
+
+.savings-goal__base-bar {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 24px;
+}
+
+.savings-goal__percent {
+    width: 75%;
+    height: 10px;
+    background-color: #814EFA;
+    border-radius: 24px;
+    animation-name: grow;
+    animation-duration: 1s;
+}
+
+@keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}

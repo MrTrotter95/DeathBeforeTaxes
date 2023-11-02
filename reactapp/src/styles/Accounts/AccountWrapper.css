@@ -1,0 +1,53 @@
+.account-wrapper {
+    background-color: white;
+    width: 360px;
+    height: 500px;
+    border-radius: 20px;
+    transition: all 1s;
+    position: relative;
+}
+
+.account-wrapper:hover {
+    background-color: rgb(129, 78, 250, 1.0);
+    cursor: pointer;
+}
+
+/* Have to set base slide-left properties before the hover */
+.account-wrapper .slide-left {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+}
+
+.account-wrapper:hover .slide-left {
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-35px);
+}
+
+.account-img {
+    height: 170px;
+    width: 170px;
+    transform: translateY(30px);
+}
+
+.js-animate-acc-img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 195px;
+    opacity: 0;
+    transition: all 0.25s;
+}
+
+.hovered {
+    opacity: 1;
+    transform: translateY(55px);
+    transition-duration: 1s;
+    transition-delay: 400ms;
+    z-index: 5;
+}
+
+.account__container {
+    width: 280px;
+}

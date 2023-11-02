@@ -1,0 +1,12 @@
+.savings-account {
+    width: 1225px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px 30px 50px 30px;
+}
+
+.balance-item {
+    width: 500px;
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 6px;
+}
