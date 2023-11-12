@@ -49,3 +49,11 @@
 .fw-900 {
     font-weight: 900;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}

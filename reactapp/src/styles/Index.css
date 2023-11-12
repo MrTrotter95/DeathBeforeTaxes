@@ -150,7 +150,32 @@ a {
     border: 1px solid var(--purple);
 }
 
-/*---------- Lists ----------*/
+.input__range {
+    -webkit-appearance: none;
+    width: 150px;
+}
+
+.input__range::-webkit-slider-runnable-track {
+    height: 10px;
+    background: var(--purple);
+    border: none;
+    border-radius: 20px;
+}
+
+.input__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid;
+    border-color: var(--purple);
+    margin-top: -3px;
+}
+
+
+/*---------- Lists & Selects ----------*/
 .action-list {
     text-align: end;
 }
@@ -158,3 +183,79 @@ a {
 .action-list li {
     margin: 15px 0;
 }
+
+.select__multiple {
+    border: 1px solid #c2c2c2;
+    border-radius: 12px;
+    font-family: Montserrat;
+    outline: none;
+
+}
+
+.select__multiple:active, .select__multiple:focus {
+    border: 1px solid var(--purple);
+}
+
+.select__multiple::-webkit-scrollbar {
+    margin: 0 5px 0 0;
+    width: 15px;
+}
+
+.select__multiple::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.select__multiple::-webkit-scrollbar-thumb {
+    background: var(--gray); 
+    border-radius: 10px;
+}
+
+.option__multiple {
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px 15px;
+    
+}
+
+.option__multiple:checked {
+    background-color: var(--light-purple);
+}
+
+.select__single {
+    border: 1px solid #c2c2c2;
+    border-radius: 12px;
+    font-family: Montserrat;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px 15px;
+}
+
+.option__single {
+    -webkit-appearance: none;
+    margin: 10px !important;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 15px;
+}
+
+
+
+/*---------- Tables ----------*/
+.table {
+    width: 100%;
+    background-color: var(--light-purple);
+    border-radius: 15px;
+}
+
+.pay-btn {
+    background-color: var(--light-purple);
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
