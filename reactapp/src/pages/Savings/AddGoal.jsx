@@ -2,6 +2,9 @@ import React from 'react';
 import SmallFormWrapper from '../../components/Cards/SmallFormWrapper';
 import '../../styles/Cards/SmallFormWrapper.css';
 
+
+// Setup Post to add a new goal
+
 const AddGoal = (props) => {
     return (
         <SmallFormWrapper>

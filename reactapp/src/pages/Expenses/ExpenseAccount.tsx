@@ -1,14 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useGetData } from '../../services/api';
+import { ExpenseAccountModel } from '../../models/models';
 
 const ExpenseAccount = () => {
+    const [expenseAccount, setExpenseAccount] = useState <ExpenseAccountModel | null> (null);
+
+
+    const { data, isLoading, isError } = useGetData('expenseAccount', 'ExpenseAccounts/1');
+
+
+
+
+    //Hook to return updated account and update the view once changes are made.
+    useEffect(() => {
+        if (data) {
+            setExpenseAccount({
+                ID: data.id,
+                Name: data.name,
+                TotalAmount: data.totalAmount
+            });
+        }
+    }, [data]);
+
+
+    //While query is retreiving information user with see Loading text.
+    if (isLoading) return 'Loading...'
+
+    //If Query is error user will see the appropriate error message.
+    if (isError) return 'An error has occurred: '
+
+
+    if (!expenseAccount) return 'Waiting to Account Information to be set'
+
     return (
         <div className='savings-account'>
             <div className='flex space-between mb-75'>
                 <div>
-                    <p className='h4 fw-600 mb-75'>Expense Account</p>
+                    <p className='h4 fw-600 mb-75'>{expenseAccount.Name}</p>
                     <div className='balance-item flex align-center space-between mb-10'>
                         <p className='text fw-500'>Current Balance</p>
-                        <p className='h4 fw-700 purple'>$2,000</p>
+                        <p className='h4 fw-700 purple'>${expenseAccount.TotalAmount}</p>
                     </div>
                     <div className='balance-item flex align-center space-between mb-10'>
                         <p className='text fw-500'>Expenses Each Month</p>

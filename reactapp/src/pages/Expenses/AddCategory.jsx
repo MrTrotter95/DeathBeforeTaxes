@@ -2,10 +2,13 @@ import React from 'react';
 import SmallFormWrapper from '../../components/Cards/SmallFormWrapper';
 import '../../styles/Cards/SmallFormWrapper.css';
 
+
+
+
 const AddCategory = (props) => {
     return (
         <SmallFormWrapper>
-            <p className='h4 fw-600 mb-50'>Add Expense</p>
+            <p className='h4 fw-600 mb-50'>Add Category</p>
             <div className='mb-20 flex flex-column'>
                 <label className='label-form'>Name</label>
                 <input className='input-form' type={Text}></input>

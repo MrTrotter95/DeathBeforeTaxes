@@ -2,6 +2,7 @@ import React from 'react';
 import SmallFormWrapper from '../../components/Cards/SmallFormWrapper';
 import '../../styles/Cards/SmallFormWrapper.css';
 
+
 const AddExpense = (props) => {
     return (
         <SmallFormWrapper>
